@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MASAKI — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- ============ BACKGROUND ORBS ============ -->
+  <div class="orb orb--1"></div>
+  <div class="orb orb--2"></div>
+  <div class="orb orb--3"></div>
+
+  <!-- ============ CURSOR FOLLOWER ============ -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav__logo">M.</a>
+    <div class="nav__links">
+      <a href="#about" class="nav__link">About</a>
+      <a href="#works" class="nav__link">Works</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-grid"></div>
+    <div class="hero__content">
+      <p class="hero__label reveal-up">App Developer</p>
+      <h1 class="hero__title">
+        <span class="reveal-up" style="--delay:.1s">MASAKI</span>
+        <span class="reveal-up hero__title--outline" style="--delay:.2s">PORTFOLIO</span>
+      </h1>
+      <p class="hero__sub reveal-up" style="--delay:.35s">
+        使いやすさと美しさを追求した<br>モバイルアプリを制作しています。
+      </p>
+      <a href="#works" class="hero__cta reveal-up" style="--delay:.5s">
+        <span>View Works</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+      </a>
+    </div>
+    <div class="hero__scroll-indicator">
+      <div class="hero__scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT (01) ============ -->
+  <section class="about" id="about">
+    <div class="section-header">
+      <span class="section-header__number reveal-up">01</span>
+      <h2 class="section-header__title reveal-up" style="--delay:.1s">About Me</h2>
+      <div class="section-header__line reveal-up" style="--delay:.2s"></div>
+    </div>
+    <div class="about__content">
+      <div class="about__text reveal-up">
+        <p class="about__intro">
+          「使いやすい」を第一に、日常をちょっと便利にするアプリを作っています。
+        </p>
+        <p class="about__body">
+          フィットネス、家計管理、情報整理、習慣化——日々の暮らしに寄り添うツールを通じて、テクノロジーの力をシンプルに届けることを目指しています。
+        </p>
+      </div>
+      <div class="about__stats reveal-up" style="--delay:.15s">
+        <div class="stat">
+          <span class="stat__number" data-count="4">0</span>
+          <span class="stat__label">Apps Published</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number stat__number--symbol">&infin;</span>
+          <span class="stat__label">Ideas in Mind</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORKS (02) ============ -->
+  <section class="works" id="works">
+    <div class="section-header">
+      <span class="section-header__number reveal-up">02</span>
+      <h2 class="section-header__title reveal-up" style="--delay:.1s">Release App</h2>
+      <div class="section-header__line reveal-up" style="--delay:.2s"></div>
+    </div>
+
+    <!-- APP 1: The筋トレメモ -->
+    <article class="app-showcase" data-app="kintore">
+      <div class="app-showcase__inner">
+        <div class="app-showcase__info reveal-left">
+          <span class="app-showcase__number">01</span>
+          <h3 class="app-showcase__name">The筋トレメモ</h3>
+          <p class="app-showcase__desc">
+            トレーニングの記録を直感的に管理できるアプリ。セット数・重量・回数をシンプルに記録し、日々の成長を可視化します。
+          </p>
+          <div class="app-showcase__tags">
+            <span class="tag">Fitness</span>
+            <span class="tag">Tracking</span>
+            <span class="tag">Health</span>
+          </div>
+          <div class="app-showcase__links">
+            <a href="#" class="app-showcase__link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              App Store
+            </a>
+          </div>
+        </div>
+        <div class="app-showcase__mockup reveal-right">
+          <div class="phone-carousel">
+            <div class="phone-mockup">
+              <div class="phone-mockup__frame">
+                <div class="phone-mockup__notch"></div>
+                <div class="phone-mockup__screen">
+                  <div class="screen-carousel" data-images='["images/apps/kintore/kintore1.PNG","images/apps/kintore/kintore2.PNG","images/apps/kintore/kintore3.PNG","images/apps/kintore/kintore4.PNG"]'>
+                    <div class="screen-carousel__track">
+                      <img src="images/apps/kintore/kintore1.PNG" alt="The筋トレメモ 1" class="screen-carousel__slide screen-carousel__slide--active" loading="lazy">
+                      <img src="images/apps/kintore/kintore2.PNG" alt="The筋トレメモ 2" class="screen-carousel__slide" loading="lazy">
+                      <img src="images/apps/kintore/kintore3.PNG" alt="The筋トレメモ 3" class="screen-carousel__slide" loading="lazy">
+                      <img src="images/apps/kintore/kintore4.PNG" alt="The筋トレメモ 4" class="screen-carousel__slide" loading="lazy">
+                    </div>
+                  </div>
+                  <div class="phone-mockup__placeholder" data-label="The筋トレメモ">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6.5 6.5h11v11h-11z"/><path d="M3 3l4.5 4.5M21 3l-4.5 4.5M3 21l4.5-4.5M21 21l-4.5-4.5"/><circle cx="12" cy="12" r="2"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="phone-mockup__reflection"></div>
+            </div>
+            <div class="carousel-dots"></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- APP 2: QuickMoney -->
+    <article class="app-showcase app-showcase--reverse" data-app="quickmoney">
+      <div class="app-showcase__inner">
+        <div class="app-showcase__info reveal-right">
+          <span class="app-showcase__number">02</span>
+          <h3 class="app-showcase__name">QuickMoney</h3>
+          <p class="app-showcase__desc">
+            素早く支出を記録できる家計簿アプリ。シンプルな操作で毎日の出費を把握し、スマートなお金の管理を実現します。
+          </p>
+          <div class="app-showcase__tags">
+            <span class="tag">Finance</span>
+            <span class="tag">Budget</span>
+            <span class="tag">Utility</span>
+          </div>
+          <div class="app-showcase__links">
+            <a href="#" class="app-showcase__link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              App Store
+            </a>
+          </div>
+        </div>
+        <div class="app-showcase__mockup reveal-left">
+          <div class="phone-carousel">
+            <div class="phone-mockup">
+              <div class="phone-mockup__frame">
+                <div class="phone-mockup__notch"></div>
+                <div class="phone-mockup__screen">
+                  <div class="screen-carousel" data-images='["images/apps/quickmoney/quickmoney1.PNG","images/apps/quickmoney/quickmoney2.PNG","images/apps/quickmoney/quickmoney3.PNG"]'>
+                    <div class="screen-carousel__track">
+                      <img src="images/apps/quickmoney/quickmoney1.PNG" alt="QuickMoney 1" class="screen-carousel__slide screen-carousel__slide--active" loading="lazy">
+                      <img src="images/apps/quickmoney/quickmoney2.PNG" alt="QuickMoney 2" class="screen-carousel__slide" loading="lazy">
+                      <img src="images/apps/quickmoney/quickmoney3.PNG" alt="QuickMoney 3" class="screen-carousel__slide" loading="lazy">
+                    </div>
+                  </div>
+                  <div class="phone-mockup__placeholder" data-label="QuickMoney">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v12M8 10h8M9 14h6"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="phone-mockup__reflection"></div>
+            </div>
+            <div class="carousel-dots"></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- APP 3: URLメモ -->
+    <article class="app-showcase" data-app="urlmemo">
+      <div class="app-showcase__inner">
+        <div class="app-showcase__info reveal-left">
+          <span class="app-showcase__number">03</span>
+          <h3 class="app-showcase__name">URLメモ</h3>
+          <p class="app-showcase__desc">
+            気になるWebページをサッと保存・整理できるブックマークアプリ。カテゴリ分けやタグ付けで、後から素早く見つけられます。
+          </p>
+          <div class="app-showcase__tags">
+            <span class="tag">Productivity</span>
+            <span class="tag">Bookmark</span>
+            <span class="tag">Organization</span>
+          </div>
+          <div class="app-showcase__links">
+            <a href="#" class="app-showcase__link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              App Store
+            </a>
+          </div>
+        </div>
+        <div class="app-showcase__mockup reveal-right">
+          <div class="phone-carousel">
+            <div class="phone-mockup">
+              <div class="phone-mockup__frame">
+                <div class="phone-mockup__notch"></div>
+                <div class="phone-mockup__screen">
+                  <div class="screen-carousel" data-images='[]'>
+                    <div class="screen-carousel__track"></div>
+                  </div>
+                  <div class="phone-mockup__placeholder" data-label="URLメモ">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="phone-mockup__reflection"></div>
+            </div>
+            <div class="carousel-dots"></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- APP 4: スタンプカレンダー -->
+    <article class="app-showcase app-showcase--reverse" data-app="stamp">
+      <div class="app-showcase__inner">
+        <div class="app-showcase__info reveal-right">
+          <span class="app-showcase__number">04</span>
+          <h3 class="app-showcase__name">スタンプカレンダー</h3>
+          <p class="app-showcase__desc">
+            毎日の習慣をスタンプで可視化するカレンダーアプリ。継続のモチベーションを楽しく維持し、習慣化をサポートします。
+          </p>
+          <div class="app-showcase__tags">
+            <span class="tag">Habit</span>
+            <span class="tag">Calendar</span>
+            <span class="tag">Lifestyle</span>
+          </div>
+          <div class="app-showcase__links">
+            <a href="#" class="app-showcase__link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              App Store
+            </a>
+          </div>
+        </div>
+        <div class="app-showcase__mockup reveal-left">
+          <div class="phone-carousel">
+            <div class="phone-mockup">
+              <div class="phone-mockup__frame">
+                <div class="phone-mockup__notch"></div>
+                <div class="phone-mockup__screen">
+                  <div class="screen-carousel" data-images='[]'>
+                    <div class="screen-carousel__track"></div>
+                  </div>
+                  <div class="phone-mockup__placeholder" data-label="スタンプカレンダー">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M8 14l2 2 4-4"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="phone-mockup__reflection"></div>
+            </div>
+            <div class="carousel-dots"></div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <h2 class="contact__title reveal-up">Let's Connect</h2>
+      <p class="contact__sub reveal-up" style="--delay:.1s">
+        お仕事のご依頼・ご相談はお気軽にどうぞ
+      </p>
+      <div class="contact__links reveal-up" style="--delay:.2s">
+        <a href="mailto:your@email.com" class="contact__link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+          <span>Email</span>
+        </a>
+        <a href="https://github.com/masaki-fitness" target="_blank" class="contact__link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://x.com/masaki_develop" target="_blank" class="contact__link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          <span>X</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <p>&copy; 2026 MASAKI. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
